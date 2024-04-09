@@ -1,0 +1,14 @@
+:root {
+  --orange-background: #ff6700;
+  --orange-dark: #c85100;
+  --background: #eae9e9;
+  --service-background: #f6f6f6;
+  --selection-background: #fff6f0;
+  --gray-rgba: rgba(66, 66, 68, 0.7);
+  --dark-background: rgba(0, 0, 0, 0.4);
+  --text-color: #424244;
+
+  --mobile-padding: 8px 45px;
+  --tablet-padding: 10px 45px;
+  --desktop-padding: 20px 100px;
+}

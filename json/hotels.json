@@ -1,0 +1,12 @@
+[
+  {
+    "image": "../images/hotels/hotel.png",
+    "distance": "1 km away from center",
+    "description": "Near beach, with private beach area and private pool. Property has terrace, 2 bathrooms ",
+    "rating": "Rating",
+    "star": "../images/hotels/star.svg",
+    "priceP": "Price",
+    "price": "400$",
+    "buttonText": "Show details"
+  }
+]

@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Roboto:wght@400;500&display=swap");
+
+header {
+  background: url(../images/landing-bg.png) no-repeat center center/cover;
+  color: white;
+  padding: 0 0 200px;
+}
+
+.header-div {
+  background: transparent;
+}
+
+.header-intro {
+  width: 100%;
+  flex: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrolled {
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.header-intro a {
+  color: white;
+}
+
+.scrolled a {
+  color: var(--text-color);
+}
+
+.navigation-section {
+  padding: var(--mobile-padding);
+  background: transparent;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.intro-section h2 {
+  margin: 0.3em 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: var(--orange-background);
+}
+
+main {
+  width: 100%;
+}
+
+main h2 {
+  font-weight: 500;
+}
+
+.main-intro,
+.memory-section,
+.tour-offers-section,
+.blogs-section,
+.book-section {
+  padding: 30px 45px;
+}
+
+.main-container {
+  display: grid;
+}
+
+.main-intro img {
+  width: 100%;
+}
+
+.main-intro-a-desktop {
+  display: none;
+}
+
+.main-intro h2,
+.main-intro p {
+  margin-bottom: 0.6rem;
+}
+
+.main-intro a {
+  color: var(--orange-background);
+  text-decoration-line: underline;
+}
+
+.main-intro a:hover {
+  color: var(--orange-dark);
+}
+
+.main-intro-a-desktop {
+  display: none;
+}
+
+.memory-section {
+  position: relative;
+  margin-top: 2em;
+}
+
+.memory-section iframe {
+  margin-top: 1em;
+  height: 500px;
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogs-section h2,
+.blogs-section p {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.blogs-section p {
+  font-size: 20px;
+}
+
+.blogs-section img {
+  width: 100%;
+}
+
+.last-blog-div {
+  display: none;
+}
+
+.tour-offers-section {
+  overflow: hidden;
+}
+
+.tour-offers-section h2 {
+  margin-bottom: 0.5em;
+}
+
+.pagination_ {
+  display: none;
+}
+
+.swiper-wrapper * {
+  font-weight: 500;
+}
+
+.swiper-slide > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.book-section {
+  background: #e0e0e0;
+  margin-bottom: 40px;
+}
+
+.book-section h2 {
+  margin-bottom: 0.8em;
+}
+
+.book-section-div {
+  position: relative;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.booking-text {
+  position: relative;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-section-div img {
+  rotate: 270deg;
+}
+
+.book-section button {
+  width: 100%;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.locations-div {
+  z-index: 1;
+  width: 100%;
+  height: 300px;
+  padding: 8px 20px;
+  display: none;
+  position: absolute;
+  top: 90%;
+  background: white;
+  overflow-y: scroll;
+  border-bottom-left-radius: 10px;
+}
+
+.book-section-div:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 601px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .main-intro-a-desktop {
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+
+  .parent-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-intro-a-mobile {
+    display: none;
+  }
+
+  .play-button-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .blogs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .last-blog-div {
+    display: block;
+  }
+
+  .book-section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    padding: 0 0 400px;
+  }
+
+  .header-div {
+    padding: var(--desktop-padding);
+  }
+
+  .header-intro {
+    flex: 0 0 20%;
+  }
+
+  .navigation-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .secondary-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .header-div li a {
+    color: white;
+    width: 1000px;
+  }
+
+  .scrolled {
+    background: var(--background);
+    color: var(--text-color);
+  }
+
+  .scrolled li a,
+  .primary-menu li a {
+    color: var(--text-color);
+  }
+
+  .primary-menu {
+    box-shadow: 2px 2px 10px var(--dark-background);
+  }
+
+  .intro-section {
+    margin-top: 10em;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .main-intro,
+  .memory-section,
+  .tour-offers-section,
+  .blogs-section,
+  .book-section {
+    padding: 40px 100px;
+  }
+
+  .blogs-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .memory-section iframe {
+    height: 600px;
+  }
+
+  .pagination_ {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 1em 0 1.5em;
+  }
+
+  .pagination_ img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .book-section-container {
+    grid-column-gap: 80px;
+  }
+}

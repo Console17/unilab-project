@@ -1,0 +1,40 @@
+{
+  "details": {
+    "type": "New Zealand Resort",
+    "adress": "54 Street, Auckland, New Zealand",
+    "rating": "Rating",
+    "info": "Near beach, with private beach area and private pool. Property has terrace, kitchen, 1 master bedroom,  2 bathrooms, living room, backyard, kids play space and private billiard room, where refined leisure and competitive spirit converge seamlessly. Experience a retreat like no other, where every corner exudes elegance, making your stay a harmonious blend of indulgence and relaxation.",
+    "price": "400$",
+    "total": "3200$",
+    "pin": "../images/hotel_book/Map_Pin.svg",
+    "heart": "../images/hotel_book/Heart.svg",
+    "share": "../images/hotel_book/Share_Android.svg",
+    "star": "../images/hotels/star.svg"
+  },
+  "main_photos": [
+    {
+      "url": "../images/hotel_book/image 10.svg"
+    },
+    {
+      "url": "../images/hotel_book/image 11.svg"
+    },
+    {
+      "url": "../images/hotel_book/image 12.svg"
+    }
+  ],
+  "secondary_photos": [
+    {
+      "url": "../images/hotel_book/image 13.svg"
+    },
+    {
+      "url": "../images/hotel_book/image 14.svg"
+    },
+    {
+      "url": "../images/hotel_book/image 15.svg"
+    },
+    {
+      "url": "../images/hotel_book/image 16.svg",
+      "p": "+15 Photos"
+    }
+  ]
+}

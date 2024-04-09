@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreEra</title>
+    <meta name="description" content="Website to book flighs and hotels." />
+    <meta
+      name="keywords"
+      content=" Book your flights and explore world with us."
+    />
+    <meta name="author" content="Guga Akopashvili" />
+    <link rel="stylesheet" href="../styles/matching.css" />
+    <link rel="stylesheet" href="../styles/services-Matching.css" />
+    <link rel="stylesheet" href="../styles/services.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="../javascript/matching.js" defer></script>
+    <script
+      type="module"
+      src="../javascript/servicesMatching.js"
+      defer
+    ></script>
+    <script src="../javascript/services.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <section class="header-intro">
+          <a href="../index.html">
+            <h1>ExploreEra</h1>
+          </a>
+          <img
+            src="../images/Hamburger_LG.svg"
+            alt="Hamburger Logo"
+            class="hamburger-logo"
+          />
+        </section>
+        <section class="navigation-section">
+          <nav>
+            <img
+              src="../images/Close_LG.svg"
+              alt="Close Hamburger Logo"
+              class="close-logo"
+            />
+            <ul class="primary-menu">
+              <li><a href="./signIn.html">Sign in</a></li>
+              <li><a href="./signUp.html">Sing up</a></li>
+              <li><a href="./signIn.html">Sing out</a></li>
+            </ul>
+            <ul class="secondary-menu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="./services.html">Our services</a></li>
+              <li><a href="#">Our offers</a></li>
+              <li>
+                <img
+                  src="../images/User_01.svg"
+                  alt="User logo"
+                  class="user-logo"
+                />
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="swiper first-swiper" id="swiper1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide active">Flights</li>
+          <li class="swiper-slide"><a href="../pages/stays.html">Stays</a></li>
+          <li class="swiper-slide">Rentals</li>
+          <li class="swiper-slide">Cruises</li>
+          <li class="swiper-slide">Attractions</li>
+        </ul>
+      </section>
+      <section class="more-options">
+        <div class="more-options-div">
+          <p>One-way</p>
+          <img src="../images/arrow.svg" class="more-options-arrow" />
+        </div>
+        <div class="more-options-div">
+          <p>1 Adult</p>
+          <img src="../images/arrow.svg" class="more-options-arrow" />
+        </div>
+        <div class="more-options-div">
+          <p>Economy</p>
+          <img src="../images/arrow.svg" class="more-options-arrow" />
+        </div>
+      </section>
+      <section class="options-section">
+        <div class="options-div">
+          <div class="options-container" id="from">
+            <div class="options-left-side">
+              <p class="opacity">From</p>
+              <h3>Tbilisi</h3>
+              <img src="../images/arrow.svg" class="options-arrow" />
+            </div>
+            <div class="options-right-side">
+              <img src="../images/Add_Plus.svg" class="plus-sign" />
+            </div>
+          </div>
+          <div class="options"></div>
+        </div>
+        <div class="options-div">
+          <div class="options-container" id="to">
+            <div class="options-left-side">
+              <p class="opacity">To</p>
+              <h3>Paris</h3>
+              <img src="../images/arrow.svg" class="options-arrow" />
+            </div>
+            <div class="options-right-side">
+              <img src="../images/Add_Plus.svg" class="plus-sign" />
+            </div>
+          </div>
+          <div class="options"></div>
+        </div>
+        <div class="options-div">
+          <div class="options-container" id="calendar">
+            <div class="options-left-side">
+              <p class="opacity">Date</p>
+              <input type="text" id="datepicker" placeholder="dd/mm/yy" />
+            </div>
+            <div class="options-right-side">
+              <img src="../images/Add_Plus.svg" class="plus-sign" />
+            </div>
+          </div>
+        </div>
+        <button class="search-button">Search</button>
+      </section>
+      <section class="main-section">
+        <div class="selection-info"></div>
+        <div class="filter-button-container">
+          <button class="filter-button">Filters</button>
+        </div>
+        <div class="main-section-container">
+          <div class="aside-container">
+            <aside class="filter-aside">
+              <div class="aside-container">
+                <div class="filter-button-container">
+                  <button class="filter-close-button">Filters</button>
+                  <img
+                    src="../images/Arrow_Right_MD.svg"
+                    class="filter-button-arrow"
+                  />
+                </div>
+                <div class="class-options">
+                  <p>Cheapest</p>
+                  <p>Quickest</p>
+                  <p>Best</p>
+                </div>
+                <div class="main-options">
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Stops</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="input-div">
+                        <input type="checkbox" id="direct" name="flightType" />
+                        <label for="direct">Direct</label>
+                      </div>
+                      <div class="input-div">
+                        <input type="checkbox" id="stop" name="flightType" />
+                        <label for="stop">One stop</label>
+                      </div>
+                      <div class="input-div">
+                        <input type="checkbox" id="stops" name="flightType" />
+                        <label for="stops">Two stops</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Times</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="from">
+                        <p></p>
+                        <div class="range-container">
+                          <div class="times slider-inputs">
+                            <p>12:00</p>
+                            <p>24:00</p>
+                          </div>
+                          <div class="sliders-control">
+                            <input
+                              id="fromSlider1"
+                              class="fromSlider"
+                              type="range"
+                              value="0"
+                              min="0"
+                              max="100"
+                            />
+                            <input
+                              id="toSlider1"
+                              class="toSlider"
+                              type="range"
+                              value="100"
+                              min="0"
+                              max="100"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="to">
+                        <p></p>
+                        <div class="range-container">
+                          <div class="times slider-inputs">
+                            <p>12:00</p>
+                            <p>24:00</p>
+                          </div>
+                          <div class="sliders-control">
+                            <input
+                              id="fromSlider2"
+                              class="fromSlider"
+                              type="range"
+                              value="0"
+                              min="0"
+                              max="100"
+                            />
+                            <input
+                              id="toSlider2"
+                              class="toSlider"
+                              type="range"
+                              value="100"
+                              min="0"
+                              max="100"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Airlines</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="input-div">
+                        <input type="checkbox" id="airlines" />
+                        <label for="airlines">Georgian Airlines</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Airports</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="input-div">
+                        <input type="checkbox" id="batumi" name="destination" />
+                        <label for="batumi">Batumi</label>
+                      </div>
+                      <div class="input-div">
+                        <input
+                          type="checkbox"
+                          id="kutaisi"
+                          name="destination"
+                        />
+                        <label for="kutaisi">Kutaisi</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Duration</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="range-container">
+                        <div class="times slider-inputs">
+                          <p>7 Hours</p>
+                          <p>30 Hours</p>
+                        </div>
+                        <div class="sliders-control">
+                          <input
+                            id="fromSlider3"
+                            class="fromSlider"
+                            type="range"
+                            value="7"
+                            min="7"
+                            max="30"
+                          />
+                          <input
+                            id="toSlider3"
+                            class="toSlider"
+                            type="range"
+                            value="30"
+                            min="7"
+                            max="30"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Price</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="range-container">
+                        <div class="price slider-inputs">
+                          <p>700$</p>
+                          <p>3000$</p>
+                        </div>
+                        <div class="sliders-control">
+                          <input
+                            id="fromSlider4"
+                            class="fromSlider"
+                            type="range"
+                            value="700"
+                            min="700"
+                            max="3000"
+                          />
+                          <input
+                            id="toSlider4"
+                            class="toSlider"
+                            type="range"
+                            value="3000"
+                            min="700"
+                            max="3000"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-options-div">
+                    <div class="drop-down-text">
+                      <p>Price Calculator</p>
+                      <img src="../images/arrow.svg" class="drop-down-arrow" />
+                    </div>
+                    <div class="dropdown">
+                      <div class="text-div">
+                        <img
+                          src="../images/services_images/Credit_Card_01.png"
+                        />
+                        <p>Payment method</p>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Choose payment method"
+                        class="price-calc-input"
+                      />
+                      <div class="text-div">
+                        <img src="../images/services_images/Handbag.png" />
+                        <p>Carry-on bag</p>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Select bags (0)"
+                        class="price-calc-input"
+                      />
+                      <div class="text-div">
+                        <img src="../images/services_images/Suitcase.png" />
+                        <p>Checked bag</p>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Select bags (0)"
+                        class="price-calc-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <section class="fligths-section">
+            <div class="flights-container"></div>
+            <button class="show-more-button">Show more</button>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-container">
+        <div class="footer-container-div">
+          <h1>ExploreEra</h1>
+          <p>Travel agency which helps you to plan your perfect holidays</p>
+          <h2>Follow us</h2>
+          <div class="footer-socials">
+            <img src="../images/instagram2.svg" alt="instagram" />
+            <img src="../images/facebook2.svg" alt="facebook" />
+            <img src="../images/linkedin2.svg" alt="linkedin" />
+          </div>
+        </div>
+        <div class="footer-container-div links-div secondary">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="../pages/services.html">Our services</a></li>
+            <li><a href="#">Our offers</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-div footer-last secondary">
+          <div class="contact-us">
+            <h2>Contact us</h2>
+            <p>exploreera@gmail.com</p>
+            <p>555111222</p>
+          </div>
+          <div class="subscribe-news">
+            <h2>Subscribe news</h2>
+            <input type="text" placeholder="Email" />
+            <img src="../images/Paper_Plane.svg" alt="paper-plane" />
+          </div>
+        </div>
+      </section>
+      <section class="footer-copyright">
+        <h2>Copyright 2024</h2>
+      </section>
+    </footer>
+  </body>
+</html>

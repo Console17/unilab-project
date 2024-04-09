@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Roboto&display=swap");
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 70px 45px 30px;
+  background: var(--service-background);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-info {
+  width: 100%;
+  background: var(--selection-background);
+}
+
+.swiper {
+  text-align: center;
+  width: 100%;
+}
+
+.first-swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.first-swiper .swiper-slide {
+  background: var(--background);
+  border-radius: 20px;
+}
+
+.first-swiper .swiper-slide,
+.first-swiper .swiper-slide a {
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Roboto" sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.active {
+  background: var(--orange-background) !important;
+  color: white !important;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.options-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.options-div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--orange-background);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.options-container {
+  padding: 0.2em 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.search-button,
+.filter-button,
+.filter-close-button,
+.show-more-button,
+.hotel-button,
+.book-now-button {
+  background: var(--orange-background);
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.options-left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.options-arrow {
+  height: 30px;
+  background: #dbdbdb;
+  border-radius: 10px;
+}
+
+.opacity {
+  opacity: 0.7;
+  background: transparent;
+}
+
+.more-options-arrow,
+.options-arrow {
+  rotate: 270deg;
+}
+
+.options {
+  z-index: 9;
+  width: 100%;
+  height: 200px;
+  padding: 8px 20px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: white;
+  overflow-y: scroll;
+  border-radius: 10px;
+  border-left: 2px solid var(--orange-background);
+  border-bottom: 2px solid var(--orange-background);
+}
+
+#datepicker {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0 8px;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.adults-p {
+  font-size: 20px;
+}
+
+.main-section {
+  display: none;
+  position: relative;
+  margin-top: 1em;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.filter-button-container {
+  position: relative;
+  width: 100%;
+}
+
+.filter-button {
+  position: relative;
+  width: 100%;
+}
+
+.filter-close-button {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.filter-button-arrow {
+  width: 35px;
+  position: absolute;
+  left: 10px;
+  top: 14%;
+  cursor: pointer;
+}
+
+.aside-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0 45px;
+  width: 100%;
+}
+
+.filter-aside {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  border-radius: 12px;
+  overflow-y: auto;
+  transition: 0.5s;
+  background: var(--service-background);
+  padding-top: 1em;
+}
+
+.show-more-button {
+  width: 100%;
+}
+
+.input-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.selection-info-cities img,
+.drop-down-arrow,
+input[type="checkbox"],
+label {
+  cursor: pointer;
+}
+
+label {
+  margin-left: 0.5em;
+}
+
+@media screen and (min-width: 601px) {
+  .options-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    padding: 120px 100px 20px;
+  }
+
+  .navigation-section {
+    padding: 0;
+  }
+
+  .swiper-wrapper,
+  .more-options,
+  .options-section,
+  .main-section {
+    padding: 0;
+  }
+
+  .first-swiper .swiper-slide {
+    max-width: 150px !important;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .options-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .options-div {
+    width: 27%;
+  }
+
+  .search-button {
+    width: 14%;
+  }
+
+  .filter-button,
+  .selection-info {
+    display: none;
+  }
+
+  .aside-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    flex: 0 0 30%;
+  }
+
+  .main-section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .filter-aside {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    padding-top: 0;
+  }
+
+  .filter-button-container {
+    display: none;
+  }
+
+  .main-section {
+    margin: 0;
+    padding: 0;
+  }
+}

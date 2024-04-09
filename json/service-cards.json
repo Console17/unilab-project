@@ -1,0 +1,8 @@
+{
+  "airlinesName": "Georgian Airlines",
+  "airlinesImgSrc": "../images/services_images/Airline.png",
+  "takeOffTime": "12:00",
+  "landingTime": "19:00",
+  "timeDuration": "7 hours",
+  "price": "600$"
+}

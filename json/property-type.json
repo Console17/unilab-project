@@ -1,0 +1,18 @@
+[
+  {
+    "image": "../images/property_type/image1.png",
+    "info": "Hotels"
+  },
+  {
+    "image": "../images/property_type/image2.png",
+    "info": "Apartments"
+  },
+  {
+    "image": "../images/property_type/image3.png",
+    "info": "Resorts"
+  },
+  {
+    "image": "../images/property_type/image4.png",
+    "info": "Villas"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "departure_date": "2024-04-15",
+    "arrival_date": "2024-04-15"
+  },
+  {
+    "departure_date": "2024-05-20",
+    "arrival_date": "2024-05-20"
+  },
+  {
+    "departure_date": "2024-06-10",
+    "arrival_date": "2024-06-10"
+  },
+  {
+    "departure_date": "2024-07-05",
+    "arrival_date": "2024-07-05"
+  },
+  {
+    "departure_date": "2024-08-15",
+    "arrival_date": "2024-08-15"
+  },
+  {
+    "departure_date": "2024-09-20",
+    "arrival_date": "2024-09-20"
+  },
+  {
+    "departure_date": "2024-10-10",
+    "arrival_date": "2024-10-10"
+  },
+  {
+    "departure_date": "2024-11-05",
+    "arrival_date": "2024-11-05"
+  },
+  {
+    "departure_date": "2024-12-25",
+    "arrival_date": "2024-12-25"
+  },
+  {
+    "departure_date": "2025-01-01",
+    "arrival_date": "2025-01-01"
+  }
+]
