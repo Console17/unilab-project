@@ -55,7 +55,7 @@ authorizationButton.addEventListener("click", (e) => {
   e.preventDefault();
   checkForm();
   if (!authorizationButton.disabled) {
-    window.location.href = "../pages/index.html";
+    window.location.href = "../index.html";
   }
 });
 
@@ -75,12 +75,6 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   inputs.forEach((input) => {
-    // input.addEventListener("focus", () => {
-    //   const validationP = input.nextElementSibling;
-    //   if (input.value.trim() === "") {
-    //     validationP.style.visibility = "visible";
-    //   }
-    // });
     input.addEventListener("blur", () => {
       const validationP = input.nextElementSibling;
       if (input.value.trim() === "") {

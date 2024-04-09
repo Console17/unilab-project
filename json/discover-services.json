@@ -1,21 +1,21 @@
 [
   {
-    "image": "../images/discover_services/main1.png",
+    "image": "images/discover_services/main1.png",
     "header": "Book Flight",
     "p": "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs."
   },
   {
-    "image": "../images/discover_services/main2.png",
+    "image": "images/discover_services/main2.png",
     "header": "Book Hotels",
     "p": "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs."
   },
   {
-    "image": "../images/discover_services/main3.png",
+    "image": "images/discover_services/main3.png",
     "header": "Book Cruises",
     "p": "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs."
   },
   {
-    "image": "../images/discover_services/main4.png",
+    "image": "images/discover_services/main4.png",
     "header": "Family Vacation",
     "p": "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs."
   }

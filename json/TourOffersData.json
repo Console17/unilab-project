@@ -1,24 +1,24 @@
 [
   {
-    "image": "../images/popular_tours/image1.png",
+    "image": "images/popular_tours/image1.png",
     "header": "Barcelona, Spain",
     "info": "2 adults, 7 days",
     "price": "2400$"
   },
   {
-    "image": "../images/popular_tours/image2.png",
+    "image": "images/popular_tours/image2.png",
     "header": "Rome, Italy",
     "info": "2 adults, 3 days",
     "price": "1800$"
   },
   {
-    "image": "../images/popular_tours/image3.png",
+    "image": "images/popular_tours/image3.png",
     "header": "Paris, France",
     "info": "2 adults, 4 days",
     "price": "2100$"
   },
   {
-    "image": "../images/popular_tours/image4.png",
+    "image": "images/popular_tours/image4.png",
     "header": "Luxor City, Egypt",
     "info": "2 adults, 3 days",
     "price": "800$"
