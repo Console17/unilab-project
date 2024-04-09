@@ -10,19 +10,19 @@ const hamburgerLogo = document.querySelector(".hamburger-logo");
 function handleScroll() {
   if (window.scrollY > 0) {
     headerDiv.classList.add("scrolled");
-    userLogo.src = "../images/User_01.svg";
-    hamburgerLogo.src = "../images/hamburger_LG.svg";
+    userLogo.src = "images/User_01.svg";
+    hamburgerLogo.src = "images/hamburger_LG.svg";
   } else {
     headerDiv.classList.remove("scrolled");
-    userLogo.src = "../images/User_landing.svg";
-    hamburgerLogo.src = "../images/Hamburger_landing.svg";
+    userLogo.src = "images/User_landing.svg";
+    hamburgerLogo.src = "images/Hamburger_landing.svg";
   }
 }
 
 window.addEventListener("scroll", handleScroll);
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const response = await fetch("../json/TourOffersData.json");
+  const response = await fetch("json/TourOffersData.json");
   const TourOffersData = await response.json();
   const doubledData = TourOffersData.concat(TourOffersData);
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 const mainContainer = document.querySelector(".main-container");
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const response = await fetch("../json/discover-services.json");
+  const response = await fetch("./json/discover-services.json");
   const data = await response.json();
 
   data.forEach((item) => {
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const response = await fetch("../json/blogData.json");
+  const response = await fetch("./json/blogData.json");
   const blogData = await response.json();
 
   let dataIndex = 0;
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const locationsDiv = bookSection.querySelector(".locations-div");
 
     bookingText.addEventListener("click", () => {
-      const jsonFilePath = `../json/Tour-section-${index + 1}.json`;
+      const jsonFilePath = `./json/Tour-section-${index + 1}.json`;
 
       if (openIndex !== null && openIndex !== index) {
         const prevLocationsDiv =
